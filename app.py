@@ -9,7 +9,7 @@ try:
     print("Connected to S3 successfully")
 
     for bucket in response["Buckets"]:
-        print(bucket["Name"])
+        print(bucket["dev"])
 
 except NoCredentialsError:
     print("AWS credentials not found")
