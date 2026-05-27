@@ -2,8 +2,8 @@ import boto3
 from botocore.exceptions import NoCredentialsError
 
 try:
-    s3 = boto3.client("rds")
 
+    s3 = boto3.client("rds")
     response = s3.list_buckets()
 
     print("Connected to S3 successfully")
