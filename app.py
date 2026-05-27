@@ -2,7 +2,7 @@ import boto3
 from botocore.exceptions import NoCredentialsError
 
 try:
-    s3 = boto3.client("s3")
+    s3 = boto3.client("ec2")
 
     response = s3.list_buckets()
 
